@@ -1,0 +1,480 @@
+/* Global & variable */
+:root {
+    --primary: #0b4f6c;
+    --secondary: #1fa4b8;
+    --light: #f4f9fc;
+    --white: #ffffff;
+    --dark: #1f2933;
+    --muted: #6b7280;
+    --shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top short Header */
+#short-header {
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    font-size: 13px;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#header-right a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+/* Movile overlay menu ( hidden by default) */
+#menu-toggle {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11,79,108,0.97);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 2000;
+}
+
+#menu-toggle:checked ~ .overlay {
+    height: 100%;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.overlay-content a {
+    color: white;
+    font-size: 18px;
+}
+
+.dropdown-content-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown-mobile:hover .dropdown-content-mobile {
+    display: flex;
+}
+/* college branding header */
+#college-logo {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    box-shadow: var(--shadow);
+}
+
+#college-logo .logo {
+    width: 90px;
+    height: 80px;
+    background: url("./images/LOGO rss.png") center/contain no-repeat;
+}
+
+.college-name h2 {
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.college-name h3 {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+
+/* Main navbar (desktop) */
+
+#nav {
+    background: var(--primary);
+}
+
+#nav-part1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav-part1 > a,
+.dropdown > a {
+    color: white;
+    padding: 14px 18px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#nav-part1 > a:hover,
+.dropdown:hover > a {
+    background: var(--secondary);
+}
+
+/* Dropdown  */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    display: none;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    padding: 12px 15px;
+    font-size: 13px;
+    color: var(--dark);
+}
+
+.dropdown-content a:hover {
+    background: var(--light);
+}
+
+/* main content layout */
+#main-content {
+    display: grid;
+    grid-template-columns: 280px 1fr 300px;
+    gap: 20px;
+    padding: 30px;
+}
+/* News section  */
+#news {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+#news h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.news-item p {
+    font-size: 14px;
+}
+
+.news-item a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+/* Slider  */
+#slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.slider-inner {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+}
+/* Faculty */
+#faculty {
+    margin-top: 25px;
+}
+
+#faculty h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.faculty-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.faculty-member {
+    width: 180px;
+    text-align: center;
+}
+
+.faculty-member img {
+    border-radius: 10px;
+}
+
+.faculty-member p {
+    margin-top: 8px;
+    font-weight: 600;
+}
+/* Principal section  */
+#right-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+#principal img {
+    width: 180px;
+    margin: auto;
+    border-radius: 20%;
+    border: 2px solid var(--primary);
+}
+
+.principal-text h2 {
+    text-align: center;
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.principal-text blockquote {
+    font-size: 13px;
+    color: var(--muted);
+}
+/* Missin & vision  */
+#mission-vision {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.mission-vision-content {
+    display: flex;
+    gap: 20px;
+}
+
+.mission, .vision {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* // courses */
+#courses-offered {
+    padding: 50px 20px;
+    background: #eef6fb;
+}
+
+.courses-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Blogs  */
+#blogs {
+    padding: 40px 20px;
+}
+
+#blog-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+ /* ===============================
+   GALLERY SLIDER (NEW)
+================================ */
+
+#gallery {
+    padding: 50px 20px;
+}
+
+.gallery-section .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease;
+}
+
+.gallery-track img {
+    width: 280px;
+    border-radius: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-track img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Buttons */
+.gallery-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-btn:hover {
+    background: #c9a227;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gallery-track img {
+        width: 220px;
+    }
+}
+
+
+/* // contact & map  */
+#reach-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+#contact-info form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-info input,
+#contact-info textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+/* Footer  */
+#footer-section {
+    background: var(--primary);
+    color: white;
+    padding: 40px 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Responsive / */
+@media (max-width: 992px) {
+    #main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-vision-content {
+        flex-direction: column;
+    }
+
+    #reach-us {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+    }
+}

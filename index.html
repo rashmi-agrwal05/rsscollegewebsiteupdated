@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Raj Shekhar Shrivastava Para Medical College</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS (will be rewritten later) -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+<!-- =====================================================
+ TOP SHORT HEADER
+===================================================== -->
+<header id="short-header">
+    <div id="header-left">
+        <i class="ri-timer-fill"></i>
+        <span>Office Timings : Mon - Sat, 10AM - 5PM</span>
+    </div>
+
+    <div id="header-right">
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-google-fill"></i>
+        <i class="ri-more-2-line"></i>
+        <i class="ri-user-3-fill"></i>
+        <a href="./login.html">Login</a>
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="ri-menu-fill"></i>
+        </label>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Mobile Overlay Menu -->
+    <nav id="mobile-menu" class="overlay">
+        <label for="menu-toggle" class="closebtn">&times;</label>
+
+        <div class="overlay-content">
+            <a href="#">HOME</a>
+
+            <div class="dropdown-mobile">
+                <a href="#" class="dropdown-btn">ABOUT <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content-mobile">
+                    <a href="#profile">Profile</a>
+                    <a href="#mission-vision">Vision & Mission</a>
+                    <a href="#gallery">Photo Gallery</a>
+                </div>
+            </div>
+
+            <div class="dropdown-mobile">
+                <a href="#" class="dropdown-btn">ADMINISTRATION <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content-mobile">
+                    <a href="#principal">Principal</a>
+                </div>
+            </div>
+
+            <div class="dropdown-mobile">
+                <a href="#" class="dropdown-btn">STUDENT CORNER <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content-mobile">
+                    <a href="#">Academic Calendar</a>
+                    <a href="#">Syllabus</a>
+                    <a href="#">Time-Tables</a>
+                    <a href="#">Student Events</a>
+                    <a href="#">Results</a>
+                </div>
+            </div>
+
+            <div class="dropdown-mobile">
+                <a href="#" class="dropdown-btn">ADMISSION <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content-mobile">
+                    <a href="#">Directorate Of Admissions</a>
+                    <a href="#">International Affairs</a>
+                    <a href="#">Apply Online For Transcripts</a>
+                </div>
+            </div>
+
+            <div class="dropdown-mobile">
+                <a href="#" class="dropdown-btn">COURSES OFFERED <i class="ri-arrow-down-s-line"></i></a>
+                <div class="dropdown-content-mobile">
+                    <a href="#courses-offered">Medical Laboratory Technician</a>
+                    <a href="#courses-offered">Operation Theatre Assistant</a>
+                    <a href="#courses-offered">Ophthalmic Assistant</a>
+                    <a href="#courses-offered">Dresser</a>
+                </div>
+            </div>
+
+            <a href="https://forms.gle/m8Y8Koxa6GHy9a8w5" target="_blank">SCHOLARSHIP</a>
+            <a href="#reach-us">CONTACT US</a>
+        </div>
+    </nav>
+</header>
+
+<!-- =====================================================
+ COLLEGE BRAND HEADER
+===================================================== -->
+<header id="college-logo">
+    <div class="logo"></div>
+
+    <div class="college-name">
+        <h2>Dr. Raj Shekhar Shrivastava Para Medical College</h2>
+        <h3>Hiropatti, Jagban, Near Kamtaul, Madhubani (Bihar), India</h3>
+    </div>
+
+    <i class="ri-search-2-line"></i>
+</header>
+
+<!-- =====================================================
+ MAIN NAVBAR (DESKTOP)
+===================================================== -->
+<nav id="nav">
+    <div id="nav-part1">
+
+        <a href="#"><i class="ri-home-8-fill"></i> HOME</a>
+
+        <div class="dropdown">
+            <a href="#">ABOUT <i class="ri-arrow-drop-down-fill"></i></a>
+            <div class="dropdown-content">
+                <a href="#profile">Profile</a>
+                <a href="#mission-vision">Vision & Mission</a>
+                <a href="#gallery">Photo Gallery</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">ADMINISTRATION <i class="ri-arrow-drop-down-fill"></i></a>
+            <div class="dropdown-content">
+                <a href="#principal">Principal</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">STUDENT CORNER <i class="ri-arrow-drop-down-fill"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Academic Calendar</a>
+                <a href="#">Syllabus</a>
+                <a href="#">Time-Tables</a>
+                <a href="#">Student Events</a>
+                <a href="#">Results</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">ADMISSION <i class="ri-arrow-drop-down-fill"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Directorate Of Admissions</a>
+                <a href="#">International Affairs</a>
+                <a href="#">Apply Online For Transcripts</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">COURSES OFFERED <i class="ri-arrow-drop-down-fill"></i></a>
+            <div class="dropdown-content">
+                <a href="#courses-offered">Medical Laboratory Technician</a>
+                <a href="#courses-offered">Operation Theatre Assistant</a>
+                <a href="#courses-offered">Ophthalmic Assistant</a>
+                <a href="#courses-offered">Dresser</a>
+            </div>
+        </div>
+
+        <a href="https://forms.gle/m8Y8Koxa6GHy9a8w5" target="_blank">SCHOLARSHIP</a>
+        <a href="#reach-us">CONTACT US</a>
+    </div>
+</nav>
+
+<!-- =====================================================
+ MAIN CONTENT WRAPPER
+===================================================== -->
+<main id="main-content">
+
+    <!-- NEWS (DESKTOP) -->
+    <section id="news">
+        <h2>Latest News</h2>
+        <div class="news-items">
+            <div class="news-item">
+                <p>
+                    16/01/2024 : Notification<br>
+                    Health Department, Govt. Of Bihar<br>
+                    <a href="Notification.pdf" target="_blank">Read more...</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CENTER CONTENT -->
+    <section id="middle-content">
+
+        <!-- SLIDER -->
+        <div id="slider">
+            <div class="slider-inner">
+                <div class="slide"><img src="./slider1.jpg" alt=""></div>
+                <div class="slide"><img src="./slider2.jpg" alt=""></div>
+                <div class="slide"><img src="./slider3.jpg" alt=""></div>
+            </div>
+            <a class="prev-slider">&#10094;</a>
+            <a class="next-slider">&#10095;</a>
+        </div>
+
+        <!-- FACULTY -->
+        <section id="faculty">
+            <h2>Our Faculty</h2>
+            <div class="faculty-container">
+                <div class="faculty-member">
+                    <img src="./faculty1.jpg" alt="">
+                    <p>Dr. Amit Shekhar<br>Shrivastava</p>
+                </div>
+                <div class="faculty-member">
+                    <img src="./faculty2.jpg" alt="">
+                    <p>Dr. Dipali Shekhar<br>Shrivastava</p>
+                </div>
+                <div class="faculty-member">
+                    <img src="./faculty3.jpg" alt="">
+                    <p>Dr. Aakanksha Shekhar<br>Shrivastava</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- PRINCIPAL -->
+    <aside id="right-content">
+        <section id="principal">
+            <img src="./principal.jpg" alt="">
+            <div class="principal-text">
+                <h2>Principal's Message</h2>
+                <blockquote>
+                    It is a great privilege and honor to be a part of the mission to make
+                    “DR. RAJ SHEKHAR SHRIVASTAVA PARA MEDICAL COLLEGE” a name to reckon within
+                    the academic fraternity...
+                </blockquote>
+                <p class="signature">- Prof. Dr. Ashish Shekhar</p>
+            </div>
+        </section>
+    </aside>
+</main>
+
+<!-- =====================================================
+ ABOUT / MISSION / VISION
+===================================================== -->
+<section id="profile"></section>
+
+<section id="mission-vision">
+    <h2>About the College</h2>
+    <p class="intro">
+        Dr. Raj Shekhar Shrivastava Para Medical College, located in Hiropatti, Jagban,
+        Near Kamtaul, Madhubani (Bihar), India, is dedicated to providing high-quality
+        education in the field of para-medical sciences.
+    </p>
+
+    <div class="mission-vision-content">
+        <div class="mission">
+            <h4>Mission</h4>
+            <p>
+                To impact comprehensive education and training in paramedical sciences,
+                fostering a new generation of healthcare professionals.
+            </p>
+        </div>
+
+        <div class="vision">
+            <h4>Vision</h4>
+            <p>
+                To be a leading paramedical institution recognized for excellence in
+                education, training, and research.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+ COURSES OFFERED
+===================================================== -->
+<section id="courses-offered">
+    <h2>Courses Offered</h2>
+
+    <div class="courses-cards">
+        <div class="course-card">
+            <h3>Diploma in Medical Laboratory Technician (DMLT)</h3>
+            <p>Diploma in Medical Laboratory Technician program at RSS Para Medical College...</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Diploma in Operation Theater Assistant (DOTA)</h3>
+            <p>Diploma in Operation Theater Assistant program is designed to train students...</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Diploma in Ophthalmic Assistant (DOA)</h3>
+            <p>This program is designed to prepare students for careers in eye care...</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Certificate in Medical Dresser (CMD)</h3>
+            <p>The Dresser program is designed to train students in the fundamental skills...</p>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+ BLOGS
+===================================================== -->
+<section id="blogs">
+    <h2>Blogs</h2>
+
+    <div id="blog-wrap">
+
+        <article class="box">
+            <img src="./blog1.jpg" alt="">
+            <h3>Madhubani, Bihar</h3>
+            <p>Published on: 21-02-2022</p>
+            <p>Madhubani is a City Municipal Corporation and headquarter of Madhubani district...</p>
+            <a href="#">Read More...</a>
+        </article>
+
+        <article class="box">
+            <img src="./blog2.jpg" alt="">
+            <h3>Madhubani Painting</h3>
+            <p>Published on: 21-02-2022</p>
+            <p>Madhubani art, also known as Mithila art, originates from the Madhubani district...</p>
+            <a href="#">Read More...</a>
+        </article>
+
+        <article class="box">
+            <img src="./blog3.jpg" alt="">
+            <h3>About Paramedical</h3>
+            <p>Published on: 21-02-2022</p>
+            <p>Paramedical science has served as a lateral aid to the medical science...</p>
+            <a href="#">Read More...</a>
+        </article>
+
+        <article class="box">
+            <img src="./blog4.jpg" alt="">
+            <h3>Job Opportunities</h3>
+            <p>Published on: 21-02-2022</p>
+            <p>With the advent of technological development, several invasive tools were designed...</p>
+            <a href="#">Read More...</a>
+        </article>
+
+    </div>
+</section>
+
+<!-- =====================================================
+ GALLERY
+===================================================== -->
+<!-- =====================================================
+ GALLERY (SLIDER VERSION)
+===================================================== -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <h2>Gallery</h2>
+
+    <div class="gallery-slider">
+      <button class="gallery-btn prev">&#10094;</button>
+
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="./gallery/1.jpeg">
+          <img src="./gallery/2.jpeg">
+          <img src="./gallery/3.jpeg">
+          <img src="./gallery/4.jpeg">
+          <img src="./gallery/5.jpeg">
+          <img src="./gallery/6.jpeg">
+          <img src="./gallery/7.jpeg">
+          <img src="./gallery/8.jpeg">
+          <img src="./gallery/9.jpeg">
+          <img src="./gallery/10.jpeg">
+          <img src="./gallery/11.jpeg">
+          <img src="./gallery/12.jpeg">
+        </div>
+      </div>
+
+      <button class="gallery-btn next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+ MAP & CONTACT
+===================================================== -->
+<section id="reach-us">
+    <div id="google-map">
+        <h4>How To Reach</h4>
+        <iframe src="https://maps.google.com/maps?q=Hiropatti%20Bihar&z=14&output=embed"></iframe>
+    </div>
+
+    <div id="contact-info">
+        <h4>Send Us A Message</h4>
+
+        <form action="contact-us.php">
+            <label>Name</label>
+            <input type="text">
+
+            <label>Phone</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea></textarea>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</section>
+
+<!-- =====================================================
+ FOOTER
+===================================================== -->
+<footer id="footer-section">
+
+    <div id="footer-section1">
+        <img src="./LOGO Footer.png" alt="">
+        <p>
+            Phone: +91-7004-890434 / +91-9534-229900<br>
+            Email: dr.rssparamedicalcollege@gmail.com
+        </p>
+    </div>
+
+    <div id="footer-section2">
+        <!-- All footer columns preserved -->
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2022 DR. RAJ SHEKHAR SHRIVASTAVA PARA MEDICAL COLLEGE</p>
+        <strong>Developed and designed by : Arbazo</strong>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
